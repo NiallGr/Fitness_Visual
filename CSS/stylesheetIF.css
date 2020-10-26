@@ -1,0 +1,81 @@
+
+.diffFasting {
+    font-size: 1.2rem;
+}
+.FastingResult {
+    
+    font-size: 1.2rem;
+    padding-left: 8%;
+    padding-right: 4%;
+    padding-top: 1%;
+    
+}
+
+#clock {
+    margin-left: 20%;
+}
+
+
+
+#visual1{
+    visibility: hidden;
+}
+#description{
+    display: none;
+}
+/* Adding display Removes the space where the content should be */
+#visual1Img{
+    max-height: 92%;
+    max-width: 92%;
+    display: none;
+    background-size:cover;
+}
+
+/* Fasting for 16 Hours */
+#visual2Img{
+    max-height: 92%;
+    max-width: 92%;
+    display: none;
+}
+/* fasting for 2 days */
+
+#visual3Img{
+    max-height: 90%;
+    max-width: 90%;
+    display: none;
+}
+/* Alternate day fasting */
+
+#visual4Img{
+    max-height: 90%;
+    max-width: 90%;
+    display: none;
+}
+
+/* weekly 24 hour fast */
+
+#visual5Img{
+    max-height: 90%;
+    max-width: 90%;
+    display: none;
+}
+/* Meal skipping  */
+
+#visual6Img{
+    max-height: 90%;
+    max-width: 90%;
+    display: none;
+}
+
+/* Meal skipping  */
+
+#visual7Img{
+    max-height: 90%;
+    max-width: 90%;
+    display: none;
+}
+#IFNames {
+   border-right: 1px solid rgba(0,0,0,.1);
+ 
+}
+

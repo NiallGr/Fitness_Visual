@@ -1,0 +1,47 @@
+html,body  {
+    height: 100%;
+    margin: 0;
+}
+
+hr.break {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+#Sidebar {
+        background-image: url(C:\Users\Niall\Desktop\Projects\CalCalculator2\images\dumbbell-equipment-fitness-flatlay-669578.jpg);
+        /* background-size:cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;   */
+    
+}
+a { 
+    color: inherit; 
+} 
+
+#full-height{
+    position: relative;
+    height: 100%;
+
+}
+.layer {
+    background-color: rgba(241, 250, 253, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.DashboardTags {
+    background-color: none;
+    margin-bottom: 4%;
+    ;
+}
+
+.DashboardTags:hover {
+ background-color: lightseagreen;
+ transition: all ease-in-out .7s;
+
+}
+

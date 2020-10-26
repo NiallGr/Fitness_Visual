@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<head>
+
+  <title>My Blog</title>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="/CSS/stylesheet.css">
+  <!-- <link rel="stylesheet" href="stylesheetBMI.css"> -->
+</head>
+<body id="body" class="background">
+ 
+<!-- Nav Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-info">
+  <a class="navbar-brand" href="./Index.html"><img src="/images/icons8-weightlifting-48.png"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <ul class="navbar-nav">
+      <a class="nav-item nav-link" href="Index.html">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="BMR.html">BMR</a>
+      <a class="nav-item nav-link active " href="BMI.html">Body Mass Index</a>
+      <a class="nav-item nav-link" href="IF.html">IF</a>
+      <li class="nav item"><a class=" nav-link" href="targetHR.html">THR</a></li>
+      <li class="nav item"><a class=" nav-link" href="workoutSplits.html">WS</a></li>
+    </ul>
+    <li class="navbar-nav ml-auto"><a class="nav-item nav-link trigger-btn-sm" id="login" href="#TheLogin"
+      data-toggle="modal">login</a></li>
+   <!-- <li  class="btn btn-info btn-sm" id="backgroundChange" href="#" role="button">Change background </li>
+   <li  class="btn btn-info btn-sm" id="backgroundChange1" href="#" role="button">Change background </li> -->
+  </li>
+  </div>
+</nav>
+
+
+<div class="container bmiContainer rounded">
+  <div class="row">
+    <div class="column col-12" id="BMI">
+      <h2 class="headingBMI">BMI</h2>
+      <P class="intro">Body mass index is a measure of body fat and is commonly used within the health industry to determine whether your weight is healthy. BMI applies to both adult men and women and is the calculation of body weight in relation to height..</P>
+      <h2 class="headingBMI">Who Shouldn't use a BMI calculator</h2>
+      <p class="intro">BMI is not used for muscle builders, long distance athletes, pregnant women, the elderly or young children. This is because BMI does not take into account whether the weight is carried as muscle or fat, just the number. Those with a higher muscle mass, such as athletes, may have a high BMI but not be at greater health risk. Those with a lower muscle mass, such as children who have not completed their growth or the elderly who may be losing some muscle mass may have a lower BMI. During pregnancy and lactation, a woman's body composition changes, so using BMI is not appropriate.Remember, while BMI is useful for predicting your ideal healthy weight, it is not meant to be entirely accurate, since it does not take into consideration your overall body composition. Anyone, regardless of their gender, who has more muscle than fat can have the same BMI as someone who is overweight. So use BMI as a tool, but don’t rely on it entirely.</p>
+        <hr>
+    </div>
+  </div>
+
+  <div class="row">
+
+    <div class="column col-8 required" >
+     
+        
+
+          <!-- Height Input  -->
+          <form id="allSelections">
+          <div class="row bmiInputs " id="bmiInputs">
+            <div class="column col-3 valueName text-center"><strong>Height:</strong></div>
+            <div class="column col-8 value form-group">
+              <input type="text" id="height" name="height" placeholder="Centimeters" class="form-control" required> 
+            </div>
+          </div>
+         
+
+          <!-- Weight Input  -->
+          
+          <div class="row " id="bmiInputs">
+            <div class="column col-3 valueName text-center"><strong>Weight:</strong></div>
+            <div class="column col-8 value form-group">
+              <input type="text" id="weight" name="weight" placeholder="kilograms" class="form-control" required>
+            </div>
+          </div>
+         
+        
+          <br>
+              
+          <div class="row">
+           <div class="column col-8 value measurements" name="level">
+            <button type="button" class="btn btn-info" id="calculate"> Calculate BMI</button>
+            <button type="button" class="btn btn-info" id="reset">Reset</button>
+            </form>
+           </div>
+          </div>
+        </div>
+     
+      <source>
+       
+        <div class="column col-4" id="resultBMI">
+           
+          <img src="/images/icons8-pushups-50.png" id="food">
+          <img src="/images/icons8-exercise-50.png" id="food">
+          <img src="/images/icons8-gymnastics-50.png" id="food">
+          <img src="/images/icons8-treadmill-50.png" id="food">
+          <hr>
+            <span class="resultBMI" id="daily"></span>
+            <hr>
+            <img src="/images/icons8-squats-50.png" id="food" >
+            <img src="/images/icons8-pullups-50.png" id="food">
+            <img src="/images/icons8-curls-with-dumbbells-50.png" id="food">
+            <img src="/images/icons8-fitness-50.png" id="food">
+        </div>
+
+        </div>
+
+    </div>
+    
+   
+  </div>
+ 
+  <div class=" column col-6 mx-auto rounded" id="chart">
+
+    <div>
+    <img src="https://bmicalculator.mes.fm/img/bmi-chart.png" class = "img-responsive bmiChart" 
+ </div>
+</div/>
+
+ <script text="" src="/JS/javascriptIndex.js"></script>
+  <script text="javascript" src="/JS/javascriptBMI.js" href=></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  </body>
+
+  </html>
