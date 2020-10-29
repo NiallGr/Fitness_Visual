@@ -139,15 +139,14 @@ reset.addEventListener("click", function(){
   
 // Change background Image on click// 
 backgroundChange.addEventListener("click", function(){
+    document.getElementById("backgroundChange1").style.display = "initial";
     var b = document.querySelector("body")
     b.classList.add("change")
-    document.getElementById("backgroundChange").style.display = "none";
-    document.getElementById("backgroundChange1").style.display = "initial";
+    
     });
     
     backgroundChange1.addEventListener("click", function(){
     var b = document.querySelector("body")
-    b.classList.remove("change") + new Date().getTime();
+    b.classList.remove("change");
     document.getElementById("backgroundChange").style.display = "initial";
-    document.getElementById("backgroundChange1").style.display = "none";
     });
